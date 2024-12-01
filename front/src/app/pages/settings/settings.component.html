@@ -1,0 +1,9 @@
+<h4>Ваша локация</h4>
+<mat-form-field>
+  <mat-label>Точка на карте</mat-label>
+  <mat-select (selectionChange)="selectLocation($event.value)">
+    @for (point of points; track point) {
+      <mat-option [value]="point" >{{point.name}}</mat-option>
+    }
+  </mat-select>
+</mat-form-field>

@@ -1,0 +1,12 @@
+<div class="container">
+  <y-map [props]="mapProps" (ready)="mapReady($event)" >
+    <y-map-default-scheme-layer/>
+    <y-map-default-features-layer />
+    @for (point of markers; track point) {
+      <y-map-default-marker [props]="point" (ready)="markersReady($event)"/>
+    }
+    @for (line of lines; track line) {
+      <y-map-feature [props]="line" [style]="line.style" (ready)="linesReady($event)"></y-map-feature>
+    }
+  </y-map>
+</div>

@@ -1,0 +1,55 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8 history-table">
+  <ng-container matColumnDef="date">
+    <th mat-header-cell *matHeaderCellDef>Дата</th>
+    <td mat-cell *matCellDef="let element">{{formatDate(element.date)}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="from">
+    <th mat-header-cell *matHeaderCellDef>Пирс отправления</th>
+    <td mat-cell *matCellDef="let element">{{element.from}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="to">
+    <th mat-header-cell *matHeaderCellDef>Пирс прибытия</th>
+    <td mat-cell *matCellDef="let element">{{element.to}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="status">
+    <th mat-header-cell *matHeaderCellDef>Статус</th>
+    <td mat-cell *matCellDef="let element">{{element.status}}</td>
+  </ng-container>
+
+<!--  <ng-container matColumnDef="distance">-->
+<!--    <th mat-header-cell *matHeaderCellDef>Стоимость</th>-->
+<!--    <td mat-cell *matCellDef="let element">{{element.distance}}</td>-->
+<!--  </ng-container>-->
+
+<!--  <ng-container matColumnDef="price">-->
+<!--    <th mat-header-cell *matHeaderCellDef>Стоимость</th>-->
+<!--    <td mat-cell *matCellDef="let element">{{element.price}}</td>-->
+<!--  </ng-container>-->
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr
+    mat-row
+    (click)="clickedRows.add(row)"
+    [class.history-row-is-clicked]="clickedRows.has(row)"
+    *matRowDef="let row; columns: displayedColumns;"
+  ></tr>
+</table>
+
+<!--<div>-->
+<!--  <h3>-->
+<!--    Click Log-->
+<!--  </h3>-->
+<!--</div>-->
+
+<!--@if (!clickedRows.size) {-->
+<!--  <div>Clicked rows will be logged here</div>-->
+<!--}-->
+
+<!--<ul>-->
+<!--  @for (clickedRow of clickedRows; track clickedRow) {-->
+<!--    <li>Clicked on {{historyItemToString(clickedRow)}}</li>-->
+<!--  }-->
+<!--</ul>-->

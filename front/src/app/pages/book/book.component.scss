@@ -1,0 +1,52 @@
+.book-container {
+  //justify-content: center;
+  //align-items: center;
+}
+
+.map-container {
+  top: -10%;
+  //height: 70vh;
+}
+
+.black-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 10%;
+  //left: 50%;
+  //transform: translateX(-50%);
+  width: 100vh;
+  height: 380px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+mat-form-field {
+  width: 300px;
+}
+
+.button-container {
+  bottom: 0px;
+  width: 300px;
+}
+
+.status-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-info  {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+}
+
+

@@ -1,0 +1,16 @@
+<div class="full-container">
+  <mat-form-field>
+    <mat-label>{{ placeholder }}</mat-label>
+    <mat-select [(value)]="selectedPierId" (selectionChange)="setValue($event.value)">
+      <mat-option [value]="">Не выбран</mat-option>
+      @for (group of pierGroup; track group) {
+        <mat-optgroup [label]="group.name"
+                      [disabled]="group.disabled">
+          @for (pier of group.piers; track pier) {
+            <mat-option [value]="pier.id">{{ pier.name }}</mat-option>
+          }
+        </mat-optgroup>
+      }
+    </mat-select>
+  </mat-form-field>
+</div>

@@ -1,0 +1,35 @@
+<form [formGroup]="formGroup">
+  <div class="container">
+    <mat-form-field>
+      <mat-label>Введите email</mat-label>
+      <input
+        matInput
+        placeholder="Email"
+        formControlName="email"
+        required
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Введите пароль</mat-label>
+      <input matInput
+             formControlName="password"
+             [type]="hide() ? 'password' : 'text'"/>
+      <button
+        mat-icon-button
+        matSuffix
+        (click)="clickEvent($event)"
+        [attr.aria-label]="'Скрыть пароль'"
+        [attr.aria-pressed]="hide()"
+      >
+        <mat-icon>{{ hide() ? 'visibility_off' : 'visibility' }}</mat-icon>
+      </button>
+    </mat-form-field>
+    <button
+      mat-fab extended
+      (click)="login()"
+      [disabled]="!formGroup.valid">
+      <mat-icon>login</mat-icon>
+      Войти
+    </button>
+  </div>
+</form>

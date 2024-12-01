@@ -1,0 +1,21 @@
+
+<mat-toolbar>
+  <button mat-icon-button class="icon" aria-label="Menu" (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>River taxi</span>
+  <span class="spacer"></span>
+</mat-toolbar>
+
+<mat-drawer-container class="container" autosize>
+  <mat-drawer #drawer class="sidenav" mode="side">
+    <mat-list *ngFor="let item of menuItems">
+      <mat-list-item><a routerLink="{{ item.path }}" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="itemClick(item.path)">{{ item.name }}</a></mat-list-item>
+    </mat-list>
+  </mat-drawer>
+  <div class="sidenav-content">
+    <router-outlet />
+  </div>
+</mat-drawer-container>
+
+

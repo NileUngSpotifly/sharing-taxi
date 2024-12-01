@@ -1,1 +1,2 @@
-# sharing-taxi
+# water-sharing-taxi
+Приложение заказа речного шеринг такси
