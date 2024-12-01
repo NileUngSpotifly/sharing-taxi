@@ -80,3 +80,6 @@ ng serve`
 # Видео демонстрация
 
 Видео, демонстрирующее работоспособность прототипа, доступно по ссылке на https://drive.google.com/file/d/17O7tkdtI_cfr5j2fSJYef9xx_l4Z1zho/view?usp=sharing.
+
+![test](https://github.com/user-attachments/assets/33ce7e7f-09c6-4393-99bf-e38d27482bf4)
+
