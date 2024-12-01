@@ -15,8 +15,8 @@
 
 Сначала клонируйте репозиторий с GitHub:
 
-git clone https://github.com/your-username/your-repository.git
-cd your-repository
+`git clone https://github.com/your-username/your-repository.git
+cd your-repository`
 
 ## Шаг 2: Установить зависимости
 
@@ -40,39 +40,39 @@ pip install -r requirements.txt`
 
 Перейдите в каталог <u>rest-server</u> и установите зависимости:
 
-cd rest-server
-pip install -r requirements.txt
+`cd rest-server
+pip install -r requirements.txt`
 
 Для <u>vehicle-emulator</u>:
 
 Перейдите в каталог <u>vehicle-emulator</u> и установите зависимости:
 
-cd vehicle-emulator
-pip install -r requirements.txt
+`cd vehicle-emulator
+pip install -r requirements.txt`
 
 Для <u>front</u>:
 
 Перейдите в каталог <u>front</u> и установите все зависимости для фронтенда:
 
-cd front
-npm install
+`cd front
+npm install`
 
 ## Шаг 3: Запуск серверов
 
 Запустите сервер предсказаний:
 
-cd rest-server
-python manage.py runserver
+`cd rest-server
+python manage.py runserver`
 
 Запустите эмулятор транспортного средства:
 
-cd vehicle-emulator
-python main.py
+`cd vehicle-emulator
+python main.py`
 
 Для запуска фронтенда:
 
-cd front
-ng serve
+`cd front
+ng serve`
 
 ## Шаг 4: Подключение к базе данных
 
