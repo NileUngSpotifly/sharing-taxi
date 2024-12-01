@@ -26,15 +26,15 @@ cd your-repository
 
 Перейдите в каталог <u>data-parser</u> и установите зависимости:
 
-cd data-parser
-pip install -r requirements.txt
+`cd data-parser
+pip install -r requirements.txt`
 
 Для <u>prediction</u>:
 
 Перейдите в каталог <u>prediction</u> и установите зависимости:
 
-cd prediction
-pip install -r requirements.txt
+`cd prediction
+pip install -r requirements.txt`
 
 Для <u>rest-server</u>:
 
